@@ -1,0 +1,48 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+header, footer{
+    background-color: #BAC1B8;
+}
+
+.site-title{
+    color: #154475;
+}
+
+#my-image{
+    box-shadow: 0 0 2px 1px black;
+}
+
+.hobbies-list{
+    list-style-type: square;
+}
+
+.hobbies-list li:nth-child(odd){
+    background-color: #C6D92F;
+}
+
+nav ul{
+   list-style-type: none; 
+
+}
+
+a{
+    text-decoration: none;
+    background-color: #C6D92F;
+    border: 1px solid #154475;
+    
+}
+
+a:hover {
+    background-color: #154475;
+    color: #BAC1B8;
+}
+
+
+/* 
+#154475
+#C6D92F
+#BAC1B8 
+*/
