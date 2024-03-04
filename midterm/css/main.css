@@ -22,7 +22,7 @@ Center the container horizontally by setting equal margins on the left and right
     background-color: #d4e9e7;
 }
 
-
+/* Position absolute, in h1 allows the element to be moved freely within the header */
 h1{
     font-size: 3.5rem;
     position: absolute;
