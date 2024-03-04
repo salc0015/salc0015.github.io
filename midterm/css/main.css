@@ -1,0 +1,43 @@
+/* Body margin to zero to have a starting point */
+/* Relative position will create a reference point for the elements that are inside the body.  */
+body{
+    margin: 0;
+    position: relative;
+    background-color: #aad4cf;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/* header{
+    position: relative;
+} */
+
+/* A fixed width is set for the container, controlling the layout.
+Relative position will place all elements inside the container relative to the container itself.
+Center the container horizontally by setting equal margins on the left and right sides.
+ */
+.wrapper{
+    width: 1020px;
+    position: relative;
+    margin: 0 auto;
+    background-color: #d4e9e7;
+}
+
+
+h1{
+    font-size: 3.5rem;
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.img-header{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
