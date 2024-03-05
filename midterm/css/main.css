@@ -46,16 +46,16 @@ h1{
 }
 
 .nav-menu ul li:last-child{
-    border-right: none; /* remove right border of last menu list item*/
+    border-right: none; /* remove right border of last menu list item */
 }
 
 .nav-menu a{
-    text-decoration: none;
+    text-decoration: none; /*Removes underline from element a */
     color: black;
 }
 
 .content{
-    margin: 10px;
+    margin: 10px; /* margin is set on all sides of the content */
 }
 
 h2{
@@ -63,44 +63,46 @@ h2{
 }
 
 .img-content{
-    width: 250px;
-    float: left;
-    margin-right: 20px;
+    width: 250px; 
+    float: left; /* the image is aligned to the left side of the container, so that the text flows to the right side */
+    margin-right: 20px; /* the right margin adds a better separation of the image from the text */
 } 
 
 .content-p{
     font-size: 17px;
-    margin-right: 8px;
+    margin-right: 8px; /* the right margin adds a better separation of the text with the container */
 }
+
 /* For both h3 */
 h3{
     font-size: 1.4rem;
 }
 
 .facts-list ul{
-    padding-left: 15px;
-    margin-bottom: 35px;
+    padding: 0; /* default padding removed */
+    margin-left: 15px; /* a left margin is set to the list from its container */
+    margin-bottom: 35px; /* bottom margin is set to separate the list with the form */
 }
 
 .label-block{
-    display: block;
+    display: block; /*each label occupies its own line, which would give the entire width of the container */
 }
 
 .label-block:first-child{
-    margin-top: 15px;
+    margin-top: 15px; /* creates a margin between the first label and the top of the form */
 }
 
 input, textarea{
-    margin: 10px 0 10px 0;
-    width: 99%;
+    margin: 10px 0 10px 0; /* top and bottom margin for input elements and text area, separation of labels.*/
+    width: 960px; /* width of input fields at 960px / 99%, they expand to fill the form container */
 }
 
 textarea{
-    height: 100px;
+    height: 100px; /*A fixed height of 100px is placed on the text area element.*/
 }
 
 .question-form{
-    display: block;
+    display: block; /* the label element will start on a new line, taking up the entire width of the container. If the text area is smaller, the label will not take up part of its space.*/
     font-size: 18px;
 }
 
