@@ -92,6 +92,34 @@ h3{
     display: block;
 }
 
+.label-block:first-child{
+    margin-top: 15px;
+}
+
+input, textarea{
+    margin: 10px 0 10px 0;
+    width: 99%;
+}
+
+textarea{
+    height: 100px;
+}
+
+.question-form{
+    display: block;
+    font-size: 18px;
+}
+
+.inline{
+    width: unset;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+button{
+    background-color: transparent;
+}
+
 
 
 
