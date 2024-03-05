@@ -27,7 +27,7 @@ h1{
     font-size: 3.5rem;
     position: absolute;
     color: white;
-    top: 18%; 
+    top: 13%; 
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -118,6 +118,18 @@ textarea{
 
 button{
     background-color: transparent;
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+}
+
+footer{
+    text-align: right;
+    width: 97%;
+    padding: 10px 0 20px 0;
 }
 
 
