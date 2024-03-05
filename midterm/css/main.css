@@ -27,7 +27,7 @@ h1{
     font-size: 3.5rem;
     position: absolute;
     color: white;
-    top: 50%;
+    top: 18%; 
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -38,6 +38,73 @@ h1{
     width: 100%;
     height: auto;
 }
+
+.nav-menu ul{
+    margin-bottom: 40px;
+} 
+
+.nav-menu ul li{
+    list-style-type: none;
+    display: inline-block;
+    width: 32.5%;
+    text-align: center;
+    border-right: 1px solid black;
+}
+
+.nav-menu ul li:last-child{
+    border-right: none;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.content{
+    margin: 10px;
+}
+
+h2{
+    font-size: 1.7rem;
+}
+
+.img-content{
+    width: 250px;
+    float: left;
+    margin-right: 20px;
+} 
+
+.content-p{
+    font-size: 17px;
+    margin-right: 8px;
+}
+/* For both h3 */
+h3{
+    font-size: 1.4rem;
+}
+
+.facts-list ul{
+    padding-left: 15px;
+    margin-bottom: 35px;
+}
+
+.label-block{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
