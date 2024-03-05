@@ -1,58 +1,52 @@
-/* Body margin to zero to have a starting point */
-/* Relative position will create a reference point for the elements that are inside the body.  */
 body{
-    margin: 0;
-    position: relative;
+    margin: 0; /* Body margin to zero to have a starting point */
+    position: relative; /* Relative position will create a reference point for the elements that are inside the body.  */
     background-color: #aad4cf;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-/* header{
-    position: relative;
-} */
+header{
+    position: relative;  /*Relative position will place all elements inside the container relative to the container itself. Helps make H1 relative to the header, giving a better reference point*/
+}
 
-/* A fixed width is set for the container, controlling the layout.
-Relative position will place all elements inside the container relative to the container itself.
-Center the container horizontally by setting equal margins on the left and right sides.
- */
+
 .wrapper{
     width: 1020px;
-    position: relative;
-    margin: 0 auto;
+    position: relative; /* Relative position will place all elements inside the container relative to the container itself*/
+    margin: 0 auto; /* Center the container horizontally by setting equal margins on the left and right sides */
     background-color: #d4e9e7;
 }
 
-/* Position absolute, in h1 allows the element to be moved freely within the header */
+
 h1{
     font-size: 3.5rem;
-    position: absolute;
+    position: absolute;  /* allows H1 to be moved freely within the header */
     color: white;
-    top: 13%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+    top: 195px; /* H1 is placed 195px / 52% down from the top of the container. */
+    left: 510px; /* H1 is placed 510px / 50% to the left of its container. */
+    transform: translate(-50%, -50%); /*H1 is centered vertically and horizontally within its container */
+    z-index: 1; /* H1 will be above the image, inside the header */
 }
 
 .img-header{
-    display: block;
-    width: 100%;
-    height: auto;
+    display: block; /* the image is treated as a block element, occupying its own line */
+    width: 1020px; /*the width of the image is 10p20px / 100% of the header, which is its container*/
 }
 
 .nav-menu ul{
-    margin-bottom: 40px;
+    margin-bottom: 40px; /* Add space below the ul element */
 } 
 
 .nav-menu ul li{
-    list-style-type: none;
-    display: inline-block;
-    width: 32.5%;
-    text-align: center;
-    border-right: 1px solid black;
+    list-style-type: none; /* remove bullets from the list */
+    display: inline-block; /* the list elements will be displayed in a horizontal line within the ul element */
+    width: 320px; /* width of each list element will be 320px or 32% of the width of its container. The space is distributed evenly.*/
+    text-align: center; /* text of each list item is centered with its container */
+    border-right: 1px solid black; /*right border is added to create separation between elements*/
 }
 
 .nav-menu ul li:last-child{
-    border-right: none;
+    border-right: none; /* remove right border of last menu list item*/
 }
 
 .nav-menu a{
