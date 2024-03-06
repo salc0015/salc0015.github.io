@@ -22,9 +22,8 @@ h1{
     font-size: 3.5rem;
     position: absolute;  /* allows H1 to be moved freely within the header */
     color: white;
-    top: 195px; /* H1 is placed 195px / 52% down from the top of the container. */
-    left: 510px; /* H1 is placed 510px / 50% to the left of its container. */
-    transform: translate(-50%, -50%); /*H1 is centered vertically and horizontally within its container */
+    top: 160px; /* H1 is placed 195px / 52% down from the top of the container. */
+    left: 340px; /* H1 is placed 510px / 50% to the left of its container. */
     z-index: 1; /* H1 will be above the image, inside the header */
 }
 
