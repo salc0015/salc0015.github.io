@@ -2,7 +2,7 @@ body{
     margin: 0; /* Body margin to zero to have a starting point */
     position: relative; /* Relative position will create a reference point for the elements that are inside the body.  */
     background-color: #aad4cf;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
@@ -34,15 +34,20 @@ h1{
 }
 
 .nav-menu ul{
-    margin-bottom: 40px; /* Add space below the ul element */
+    margin-top: 3px; /* margin to separate the image from the navigation menu */
+    margin-bottom: 45px; /* Add space below the ul element */
 } 
 
 .nav-menu ul li{
     list-style-type: none; /* remove bullets from the list */
     display: inline-block; /* the list elements will be displayed in a horizontal line within the ul element */
     width: 320px; /* width of each list element will be 320px or 32% of the width of its container. The space is distributed evenly.*/
+    height: 27px; 
     text-align: center; /* text of each list item is centered with its container */
     border-right: 1px solid black; /*right border is added to create separation between elements*/
+    font-size: 1.3rem;
+    padding-top: 7px; /* Top padding in the navigation menu, creates space between the top border of the menu and the text, without affecting the start of the right border */
+    
 }
 
 .nav-menu ul li:last-child{
@@ -81,7 +86,7 @@ h3{
 .facts-list ul{
     padding: 0; /* default padding removed */
     margin-left: 15px; /* a left margin is set to the list from its container */
-    margin-bottom: 35px; /* bottom margin is set to separate the list with the form */
+    margin-bottom: 40px; /* bottom margin is set to separate the list with the form */
 }
 
 .label-block{
@@ -101,6 +106,10 @@ textarea{
     height: 100px; /*A fixed height of 100px is placed on the text area element.*/
 }
 
+.contact input{
+    height: 20px;
+}
+
 .question-form{
     display: block; /* the label element will start on a new line, taking up the entire width of the container. If the text area is smaller, the label will not take up part of its space.*/
     font-size: 18px;
@@ -109,6 +118,7 @@ textarea{
 .inline{
     width: unset; /* The width of the element is reset and is determined by the width of its content, giving flexibility without having to specify a width */
     margin-top: 30px; /* Space is created above the radio buttons and the question label */
+    margin-left: 10px;
     margin-right: 15px; /* right margin is added to separate each radio button with its respective label */
 }
 
@@ -119,7 +129,7 @@ button{
     cursor: pointer; /* changes the cursor to a pointer, displaying an interactive button */
     font-size: 15px;
     font-weight: bold;
-    margin: 10px 0 10px 0; /* margins between the top text and the bottom edge of the form */
+    margin: 15px 0 10px 0; /* margins between the top text and the bottom edge of the form */
 }
 
 footer{
