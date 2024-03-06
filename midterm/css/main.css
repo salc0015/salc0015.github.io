@@ -107,25 +107,26 @@ textarea{
 }
 
 .inline{
-    width: unset;
-    margin-top: 30px;
-    margin-right: 15px;
+    width: unset; /* The width of the element is reset and is determined by the width of its content, giving flexibility without having to specify a width */
+    margin-top: 30px; /* Space is created above the radio buttons and the question label */
+    margin-right: 15px; /* right margin is added to separate each radio button with its respective label */
 }
 
 button{
     background-color: transparent;
     border: 1px solid black;
-    padding: 10px;
-    cursor: pointer;
+    padding: 10px; /* space between the button text and its border. */
+    cursor: pointer; /* changes the cursor to a pointer, displaying an interactive button */
     font-size: 15px;
     font-weight: bold;
-    margin: 10px 0 10px 0;
+    margin: 10px 0 10px 0; /* margins between the top text and the bottom edge of the form */
 }
 
 footer{
-    text-align: right;
-    width: 97%;
-    padding: 10px 0 20px 0;
+    text-align: right; /* aligns the footer text to the right of the container */
+    margin: 38px 26px 0 0; /* Top and Right margin to create a space between the form and the  footer content, and between the container and the footer content. */
+    padding-bottom: 38px; /* Creates space between the footer content and the bottom edge of the container */
+
 }
 
 
