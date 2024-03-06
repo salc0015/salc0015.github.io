@@ -34,8 +34,10 @@ h1{
 }
 
 .nav-menu ul{
+    padding-left: 0;
     margin-top: 3px; /* margin to separate the image from the navigation menu */
     margin-bottom: 45px; /* Add space below the ul element */
+    text-align: center; /* ul item is centered with its container */
 } 
 
 .nav-menu ul li{
@@ -43,7 +45,6 @@ h1{
     display: inline-block; /* the list elements will be displayed in a horizontal line within the ul element */
     width: 320px; /* width of each list element will be 320px or 32% of the width of its container. The space is distributed evenly.*/
     height: 27px; 
-    text-align: center; /* text of each list item is centered with its container */
     border-right: 1px solid black; /*right border is added to create separation between elements*/
     font-size: 1.3rem;
     padding-top: 7px; /* Top padding in the navigation menu, creates space between the top border of the menu and the text, without affecting the start of the right border */
