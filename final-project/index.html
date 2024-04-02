@@ -7,11 +7,11 @@
     <title>Final Project</title>
 </head>
 <body>
-    <!-- General wrapping of the page content -->
+    <!-- General wrapping of the page content. It would be 100% width, and i would add a max-width 1200 in my media query -->
     <div class="wrapper">
-        <!-- The header will wrap two bleed wrappers. -->
+        <!-- The header will wrap two bleed wrappers. One for my logo, nav-menu and search bar, and the other for my banner and it content. -->
         <header>
-            <!-- First bleed wrapper inside the header which will wrap a block for the logo, menu and search bar. -->
+            <!-- First bleed wrapper inside the header which will wrap a block for the logo, menu and search bar. Background #222, and padding.-->
             <div class="bleed-wrapper-menu">
                 <!-- Wrapper to contain three more divs for logo, menu and search bar.  -->
                 <div class="wrapper-logo-menu-search">
@@ -23,18 +23,20 @@
                     <div class="nav-menu">
                         <nav>
                             <ul class="menu-list">
-                                <li><a href="#"></a>Home</li>
-                                <li><a href="#"></a>About us</li>
-                                <li><a href="#"></a>Services</li>
-                                <li><a href="#"></a>Team</li>
-                                <li><a href="#"></a>Contact</li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
                     <!-- SEARCH BAR -->
                     <div class="search-bar">
-                        <input type="text">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <form action="index.html" method="get">
+                            <input type="text">
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -45,7 +47,9 @@
                 <div class="wrapper-welcome-content">
                     <h1>Welcome to Three Star Media</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi incidunt ratione, libero ut nam eligendi error reprehenderit suscipit aliquam voluptatem ad eum officia perferendis fugit corporis ab necessitatibus rem. Molestiae.</p>
-                    <button type="button">Connect with us</button>
+                    <div>
+                        <p><a href="#">Connect with us &#x25ba;</a></p>
+                    </div>
                 </div>
             </div>
         </header>
@@ -76,35 +80,45 @@
                         <img src="images/digital.jpg" alt="Digital Transformation">
                         <h3>Digital Transformation</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
-                        <button type="button">Digital Plans</button>
+                        <div>
+                            <p><a href="#">Digital Plans &#x25ba;</a></p>
+                        </div>
                     </div>
                     <!-- Wrapper for the MARKETING service -->
                     <div class="wrapper-service-marketing">
                         <img src="images/marketing.jpg" alt="Marketing">
                         <h3>Marketing</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
-                        <button type="button">Marketing  Plans</button>
+                        <div>
+                            <p><a href="#">Marketing  Plans &#x25ba;</a></p>
+                        </div>
                     </div>
                     <!-- Wrapper for the VIDEO service -->
                     <div class="wrapper-service-video">
                         <img src="images/video.jpg" alt="Video Production">
                         <h3>Video Production</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
-                        <button type="button">Video Plans</button>
+                        <div>
+                            <p><a href="#">Video Plans &#x25ba;</a></p>
+                        </div>
                     </div>
                     <!-- Wrapper for the WEB service -->
                     <div class="wrapper-service-web">
                         <img src="images/web.jpg" alt="Web Development">
                         <h3>Web Development</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
-                        <button type="button">Web Plans</button>
+                        <div>
+                            <p><a href="#">Web Plans &#x25ba;</a></p>
+                        </div>
                     </div>
                     <!-- Wrapper for the Print service -->
                     <div class="wrapper-service-print">
                         <img src="images/print.jpg" alt="Print">
                         <h3>Print</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
-                        <button type="button">Print Plans</button>
+                        <div>
+                            <p><a href="#">Print Plans &#x25ba;</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -114,7 +128,9 @@
                 <div class="wrapper-vision">
                     <h2>Our Vision</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ducimus saepe, est eveniet voluptatem, animi maiores minus, at nihil aliquam hic accusantium! Deserunt laborum corrupti, similique doloribus dolorum quod possimus.</p>
-                    <button type="button">Learn More</button>
+                    <div>
+                        <p><a href="#">Learn More &#x25ba;</a></p>
+                    </div>
                 </div>
             </div>
             <!-- Bleed wrapper for the Our Team content -->
@@ -152,17 +168,23 @@
                 <div class="wrapper-contact">
                     <h2>Contact Us</h2>
                     <div class="contact-form">
-                        <form action="get">
+                        <form action="index.html" method="get">
                             <h3>Send us a message</h3>
-                            <label for="name">Full Name</label>
-                            <input type="text" name="name" id="name">
+                            <div>
+                                <label for="name">Full Name</label>
+                                <input type="text" name="name" id="name">
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div>
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" cols="20" rows="4"></textarea>
+                            </div>
 
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
+                            <button type="submit">Send</button>
 
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" cols="20" rows="4"></textarea>
-                            <input type="submit" value="Submit">
                         </form>
                     </div>
                     <!-- Table will be at the bottom in desktop -->
