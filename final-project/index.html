@@ -15,14 +15,17 @@
             <div class="bleed-wrapper-menu">
                 <!-- Wrapper to contain three more divs for logo, menu and search bar.  -->
                 <div class="wrapper-logo-menu-search">
-                    <!-- Div for logo, on mobile it extends horizontally to the size of the screen with the same color as the logo. In the desktop version it will only have the size of the logo. -->
-                    <div class="logo">
+                    <!-- Div for logo, on mobile will contain a width of 100%, with a paddint top and background color. For desktop gonna take the size of the logo -->
+                    <div class="wrapper-logo">
                         <img src="images/logo.png" alt="Logo Three Star Media">
                     </div>
                     <!-- NAV MENU -->
+                    <!-- The nav will take 100% width, a display flex and a justify-content to align divs to the center  -->
                     <div class="nav-menu">
                         <nav>
+                            <!-- Menu-list will have a display flex, to align the items of the list to the center. I will aply a width of 100% so i can apply the same width and modify the first element of the list. Flex direction column for the mobile version, aligning element to the center -->
                             <ul class="menu-list">
+                                <!-- The width of each element of my list will have a width of 100%, but only the first one (HOME) will have a different background and font color. Padding top and botton to separate each element.  -->
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">About us</a></li>
                                 <li><a href="#">Services</a></li>
@@ -32,9 +35,11 @@
                         </nav>
                     </div>
                     <!-- SEARCH BAR -->
+                    <!-- Div that contain the form for the input and button for the search bar. -->
                     <div class="search-bar">
                         <form action="index.html" method="get">
                             <input type="text">
+                            <!-- Inside the button is de search icon. Changes in button, border, color, aligning item (icon) to the center, justify content. -->
                             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </form>
                     </div>
@@ -42,12 +47,14 @@
             </div>
             <!-- Second bleed wrapper inside the header that will wrap the main title, a paragraph and a button. -->
             <div class="bleed-wrapper-welcome">
-                <!-- BANNER IMAGE in CSS -->
-                <!-- Wrapper for content h1, paragraph and button -->
+                <!-- BANNER IMAGE in CSS. Bakcground image, size cover, width of 100% -->
+                <!-- Wrapper for content h1, paragraph and button. Background with rgba applying an opacity. -->
                 <div class="wrapper-welcome-content">
+                    <!-- Adding a margin, line-heignt, besides the font size and font weigth -->
                     <h1>Welcome to Three Star Media</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi incidunt ratione, libero ut nam eligendi error reprehenderit suscipit aliquam voluptatem ad eum officia perferendis fugit corporis ab necessitatibus rem. Molestiae.</p>
                     <div>
+                        <!-- Adding some padding, background color, color (font), border. Depending on the measurements (or colors) the same class is used for the other buttons  -->
                         <p><a href="#">Connect with us &#x25ba;</a></p>
                     </div>
                 </div>
@@ -55,11 +62,11 @@
         </header>
         <!-- Wrapper that will have the entire content/body of the web page -->
         <div class="wrapper-main-content">
-            <!-- Bleed Wrapper for the ABOUT US content -->
+            <!-- Bleed Wrapper for the ABOUT US content. Background #ffe6ac and padding -->
             <div class="bleed-wrapper-about">
                 <!-- Wraper for the content that is the image, and text content (h2 and paragraph) -->
                 <div class="wrapper-about">
-                    <!-- wrapper for the image -->
+                    <!-- wrapper for the image, 100% width. For desktop version will apply a float left for the next be next to image. -->
                     <div class="image-about">
                         <img src="images/about-us.jpg" alt="Pin pong table for the about us content">
                     </div>
@@ -70,16 +77,17 @@
                     </div>
                 </div>
             </div>
-            <!-- Bleed wrapper for the OUR SERVICE content -->
+            <!-- Bleed wrapper for the OUR SERVICE content. Padding to align the wrapper services.  -->
             <div class="bleed-wrapper-service">
-                <!-- wrapper for the content, h2 and each service -->
+                <!-- wrapper for the content, h2 and each service. For desktop a grid would be use, 6 columns. H1 would take the 6 columns of the first rows, two first services will take secon row, three columns for the first service, the last three for the second service. Last three services will take the last row, two columns for each service  -->
                 <div class="wrapper-services">
                     <h2>Our Services</h2>
-                    <!-- Wrapper for the DIGITAL service -->
+                    <!-- Wrapper for the DIGITAL service. Contain the image 100% widt. A background.  -->
                     <div class="wrapper-service-digital">
                         <img src="images/digital.jpg" alt="Digital Transformation">
                         <h3>Digital Transformation</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
+                        <!-- Adding some padding, background color, color (font), border. Depending on the measurements (or colors) the same class is used for the other buttons. Different for the welcome button link  -->
                         <div>
                             <p><a href="#">Digital Plans &#x25ba;</a></p>
                         </div>
@@ -122,20 +130,23 @@
                     </div>
                 </div>
             </div>
-            <!-- Bleed wrapper for the OUR VISION content, the background image will be in css file -->
+            <!-- Bleed wrapper for the OUR VISION content -->
             <div class="bleed-wrapper-vision">
+                <!-- the background image will be in css file, cover, no repeat, width 100% -->
                 <!-- wrapper for the content, h2, paragraph and button -->
                 <div class="wrapper-vision">
                     <h2>Our Vision</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ducimus saepe, est eveniet voluptatem, animi maiores minus, at nihil aliquam hic accusantium! Deserunt laborum corrupti, similique doloribus dolorum quod possimus.</p>
                     <div>
+                        <!-- Button with the same measurements as the Services buttons, just adding different color, background color (opacity). -->
                         <p><a href="#">Learn More &#x25ba;</a></p>
                     </div>
                 </div>
             </div>
-            <!-- Bleed wrapper for the Our Team content -->
+            <!-- Bleed wrapper for the Our Team content. Adding a padding -->
             <div class="bleed-wrapper-team">
                 <!-- wrapper for the content, h2 and two divs for each person -->
+                <!-- A gruid with two columns, 3 rows. H1 first row, second row for the first person, first column the image, the second column the div with the content. Third row for the second person, first column the div with the content, and the second column the image -->
                 <div class="wrapper-team">
                     <h2>Our Team</h2>
                     <!-- Wrapper for the first person, image and text content -->
@@ -165,11 +176,13 @@
             <!-- Bleed wrapper for the Contact Us content -->
             <div class="bleed-wrapper-contact">
                 <!-- Wrapper for the content, h2, and form -->
+                <!-- Grid with two columns and 3 rows. First row for h2, second row and first column for the form. Second column in second row the location. The third row is for the hours of operation, the table will display in the two columns. -->
                 <div class="wrapper-contact">
                     <h2>Contact Us</h2>
                     <div class="contact-form">
                         <form action="index.html" method="get">
                             <h3>Send us a message</h3>
+                            <!-- Ading a div for each label with input -->
                             <div>
                                 <label for="name">Full Name</label>
                                 <input type="text" name="name" id="name">
