@@ -26,11 +26,11 @@
                             <!-- Menu-list will have a display flex, to align the items of the list to the center. I will aply a width of 100% so i can apply the same width and modify the first element of the list. Flex direction column for the mobile version, aligning element to the center -->
                             <ul class="menu-list">
                                 <!-- The width of each element of my list will have a width of 100%, but only the first one (HOME) will have a different background and font color. Padding top and botton to separate each element.  -->
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Team</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#about-us">About us</a></li>
+                                <li><a href="#service">Services</a></li>
+                                <li><a href="#section">Team</a></li>
+                                <li><a href="#contact-us">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -55,15 +55,16 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi incidunt ratione, libero ut nam eligendi error reprehenderit suscipit aliquam voluptatem ad eum officia perferendis fugit corporis ab necessitatibus rem. Molestiae.</p>
                     <div>
                         <!-- Adding some padding, background color, color (font), border. Depending on the measurements (or colors) the same class is used for the other buttons  -->
-                        <p><a href="#">Connect with us &#x25ba;</a></p>
+                        <a href="#">Connect with us &#x25ba;</a>
                     </div>
                 </div>
             </div>
         </header>
         <!-- Wrapper that will have the entire content/body of the web page -->
         <div class="wrapper-main-content">
+            <!-- ABOUT US Section -->
             <!-- Bleed Wrapper for the ABOUT US content. Background #ffe6ac and padding -->
-            <div class="bleed-wrapper-about">
+            <div id="about-us" class="bleed-wrapper-about">
                 <!-- Wraper for the content that is the image, and text content (h2 and paragraph) -->
                 <div class="wrapper-about">
                     <!-- wrapper for the image, 100% width. For desktop version will apply a float left for the next be next to image. -->
@@ -77,55 +78,66 @@
                     </div>
                 </div>
             </div>
+            <!-- SERVICE section -->
             <!-- Bleed wrapper for the OUR SERVICE content. Padding to align the wrapper services.  -->
-            <div class="bleed-wrapper-service">
+            <div id="service" class="bleed-wrapper-service">
                 <!-- wrapper for the content, h2 and each service. For desktop a grid would be use, 6 columns. H1 would take the 6 columns of the first rows, two first services will take secon row, three columns for the first service, the last three for the second service. Last three services will take the last row, two columns for each service  -->
                 <div class="wrapper-services">
                     <h2>Our Services</h2>
                     <!-- Wrapper for the DIGITAL service. Contain the image 100% widt. A background.  -->
                     <div class="wrapper-service-digital">
-                        <img src="images/digital.jpg" alt="Digital Transformation">
+                        <div class="image-digital">
+                            <img src="images/digital.jpg" alt="Digital Transformation">
+                        </div>
                         <h3>Digital Transformation</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
                         <!-- Adding some padding, background color, color (font), border. Depending on the measurements (or colors) the same class is used for the other buttons. Different for the welcome button link  -->
                         <div>
-                            <p><a href="#">Digital Plans &#x25ba;</a></p>
+                            <a href="#">Digital Plans &#x25ba;</a>
                         </div>
                     </div>
                     <!-- Wrapper for the MARKETING service -->
                     <div class="wrapper-service-marketing">
-                        <img src="images/marketing.jpg" alt="Marketing">
+                        <div class="image-marketing">
+                            <img src="images/marketing.jpg" alt="Marketing">
+                        </div>
                         <h3>Marketing</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
                         <div>
-                            <p><a href="#">Marketing  Plans &#x25ba;</a></p>
+                            <a href="#">Marketing Plans &#x25ba;</a>
                         </div>
                     </div>
                     <!-- Wrapper for the VIDEO service -->
                     <div class="wrapper-service-video">
-                        <img src="images/video.jpg" alt="Video Production">
+                        <div class="image-video"></div>
+                            <img src="images/video.jpg" alt="Video Production">
+                        </div>
                         <h3>Video Production</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
                         <div>
-                            <p><a href="#">Video Plans &#x25ba;</a></p>
+                            <a href="#">Video Plans &#x25ba;</a>
                         </div>
                     </div>
                     <!-- Wrapper for the WEB service -->
                     <div class="wrapper-service-web">
-                        <img src="images/web.jpg" alt="Web Development">
+                        <div class="image-web">
+                            <img src="images/web.jpg" alt="Web Development">
+                        </div>
                         <h3>Web Development</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
                         <div>
-                            <p><a href="#">Web Plans &#x25ba;</a></p>
+                            <a href="#">Web Plans &#x25ba;</a>
                         </div>
                     </div>
                     <!-- Wrapper for the Print service -->
                     <div class="wrapper-service-print">
-                        <img src="images/print.jpg" alt="Print">
+                        <div class="image-print">
+                            <img src="images/print.jpg" alt="Print">
+                        </div>
                         <h3>Print</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
                         <div>
-                            <p><a href="#">Print Plans &#x25ba;</a></p>
+                            <a href="#">Print Plans &#x25ba;</a>
                         </div>
                     </div>
                 </div>
@@ -139,12 +151,13 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ducimus saepe, est eveniet voluptatem, animi maiores minus, at nihil aliquam hic accusantium! Deserunt laborum corrupti, similique doloribus dolorum quod possimus.</p>
                     <div>
                         <!-- Button with the same measurements as the Services buttons, just adding different color, background color (opacity). -->
-                        <p><a href="#">Learn More &#x25ba;</a></p>
+                        <a href="#">Learn More &#x25ba;</a>
                     </div>
                 </div>
             </div>
+            <!-- TEAM Section -->
             <!-- Bleed wrapper for the Our Team content. Adding a padding -->
-            <div class="bleed-wrapper-team">
+            <div id="section" class="bleed-wrapper-team">
                 <!-- wrapper for the content, h2 and two divs for each person -->
                 <!-- A gruid with two columns, 3 rows. H1 first row, second row for the first person, first column the image, the second column the div with the content. Third row for the second person, first column the div with the content, and the second column the image -->
                 <div class="wrapper-team">
@@ -173,8 +186,9 @@
                     </div>
                 </div>
             </div>
+            <!-- CONTACT US Section -->
             <!-- Bleed wrapper for the Contact Us content -->
-            <div class="bleed-wrapper-contact">
+            <div id="contact-us" class="bleed-wrapper-contact">
                 <!-- Wrapper for the content, h2, and form -->
                 <!-- Grid with two columns and 3 rows. First row for h2, second row and first column for the form. Second column in second row the location. The third row is for the hours of operation, the table will display in the two columns. -->
                 <div class="wrapper-contact">
@@ -203,18 +217,23 @@
                     <div class="table-hours">
                         <h3>Hours of operation</h3>
                         <table class="hours-operation">
-                            <tr>
-                                <th>Days</th>
-                                <th>Hours</th>
-                            </tr>
-                            <tr>
-                                <td>Monday - Friday</td>
-                                <td>9 AM - 6 PM</td>
-                            </tr>
-                            <tr>
-                                <td>Saturday - Sunday</td>
-                                <td>Closed</td>
-                            </tr>
+                            <!--  -->
+                            <thead class="table-header">
+                                <tr>
+                                    <th>Days</th>
+                                    <th>Hours</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monday - Friday</td>
+                                    <td>9 AM - 6 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday - Sunday</td>
+                                    <td>Closed</td>
+                                </tr>
+                                </tbody>
                         </table>
                     </div>
                     <!-- Map will be next to form in desktop -->
