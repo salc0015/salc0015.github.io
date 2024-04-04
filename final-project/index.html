@@ -8,54 +8,58 @@
 </head>
 <body>
     <!-- General wrapping of the page content. It would be 100% width, and i would add a max-width 1200 in my media query -->
-    <div class="wrapper">
+    <div class="wrapper-general">
         <!-- The header will wrap two bleed wrappers. One for my logo, nav-menu and search bar, and the other for my banner and it content. -->
         <header>
             <!-- First bleed wrapper inside the header which will wrap a block for the logo, menu and search bar. Background #222, and padding.-->
             <div class="bleed-wrapper-menu">
-                <!-- Wrapper to contain three more divs for logo, menu and search bar.  -->
-                <div class="wrapper-logo-menu-search">
-                    <!-- Div for logo, on mobile will contain a width of 100%, with a paddint top and background color. For desktop gonna take the size of the logo -->
-                    <div class="wrapper-logo">
-                        <img src="images/logo.png" alt="Logo Three Star Media">
-                    </div>
-                    <!-- NAV MENU -->
-                    <!-- The nav will take 100% width, a display flex and a justify-content to align divs to the center  -->
-                    <div class="nav-menu">
-                        <nav>
-                            <!-- Menu-list will have a display flex, to align the items of the list to the center. I will aply a width of 100% so i can apply the same width and modify the first element of the list. Flex direction column for the mobile version, aligning element to the center -->
-                            <ul class="menu-list">
-                                <!-- The width of each element of my list will have a width of 100%, but only the first one (HOME) will have a different background and font color. Padding top and botton to separate each element.  -->
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="#about-us">About us</a></li>
-                                <li><a href="#service">Services</a></li>
-                                <li><a href="#section">Team</a></li>
-                                <li><a href="#contact-us">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <!-- SEARCH BAR -->
-                    <!-- Div that contain the form for the input and button for the search bar. -->
-                    <div class="search-bar">
-                        <form action="index.html" method="get">
-                            <input type="text" placeholder="Search">
-                            <!-- Inside the button is de search icon. Changes in button, border, color, aligning item (icon) to the center, justify content. -->
-                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        </form>
+                <div class="wrapper-container">
+                    <!-- Wrapper to contain three more divs for logo, menu and search bar.  -->
+                    <div class="wrapper-logo-menu-search">
+                        <!-- Div for logo, on mobile will contain a width of 100%, with a paddint top and background color. For desktop gonna take the size of the logo -->
+                        <div class="wrapper-logo">
+                            <img src="images/logo.png" alt="Logo Three Star Media">
+                        </div>
+                        <!-- NAV MENU -->
+                        <!-- The nav will take 100% width, a display flex and a justify-content to align divs to the center  -->
+                        <div class="nav-menu">
+                            <nav>
+                                <!-- Menu-list will have a display flex, to align the items of the list to the center. I will aply a width of 100% so i can apply the same width and modify the first element of the list. Flex direction column for the mobile version, aligning element to the center -->
+                                <ul class="menu-list">
+                                    <!-- The width of each element of my list will have a width of 100%, but only the first one (HOME) will have a different background and font color. Padding top and botton to separate each element.  -->
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="#about-us">About us</a></li>
+                                    <li><a href="#service">Services</a></li>
+                                    <li><a href="#section">Team</a></li>
+                                    <li><a href="#contact-us">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- SEARCH BAR -->
+                        <!-- Div that contain the form for the input and button for the search bar. -->
+                        <div class="search-bar">
+                            <form action="index.html" method="get">
+                                <input type="text" placeholder="Search">
+                                <!-- Inside the button is de search icon. Changes in button, border, color, aligning item (icon) to the center, justify content. -->
+                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Second bleed wrapper inside the header that will wrap the main title, a paragraph and a button. -->
             <div class="bleed-wrapper-welcome">
+                <div class="wrapper-container">
                 <!-- BANNER IMAGE in CSS. Bakcground image, size cover, width of 100% -->
                 <!-- Wrapper for content h1, paragraph and button. Background with rgba applying an opacity. -->
-                <div class="wrapper-welcome-content">
-                    <!-- Adding a margin, line-heignt, besides the font size and font weigth -->
-                    <h1>Welcome to Three Star Media</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi incidunt ratione, libero ut nam eligendi error reprehenderit suscipit aliquam voluptatem ad eum officia perferendis fugit corporis ab necessitatibus rem. Molestiae.</p>
-                    <div>
-                        <!-- Adding some padding, background color, color (font), border. Depending on the measurements (or colors) the same class is used for the other buttons  -->
-                        <a href="#">Connect with us <i class="fa-solid fa-caret-right"></i></a>
+                    <div class="wrapper-welcome-content">
+                        <!-- Adding a margin, line-heignt, besides the font size and font weigth -->
+                        <h1>Welcome to Three Star Media</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi incidunt ratione, libero ut nam eligendi error reprehenderit suscipit aliquam voluptatem ad eum officia perferendis fugit corporis ab necessitatibus rem. Molestiae.</p>
+                        <div>
+                            <!-- Adding some padding, background color, color (font), border. Depending on the measurements (or colors) the same class is used for the other buttons  -->
+                            <a href="#">Connect with us <i class="fa-solid fa-caret-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -81,107 +85,113 @@
             <!-- SERVICE section -->
             <!-- Bleed wrapper for the OUR SERVICE content. Padding to align the wrapper services.  -->
             <div id="service" class="bleed-wrapper-service">
-                <!-- wrapper for the content, h2 and each service. For desktop a grid would be use, 6 columns. H1 would take the 6 columns of the first rows, two first services will take secon row, three columns for the first service, the last three for the second service. Last three services will take the last row, two columns for each service  -->
-                <div class="wrapper-services">
-                    <h2>Our Services</h2>
-                    <!-- Wrapper for the DIGITAL service. Contain the image 100% widt. A background.  -->
-                    <div class="wrapper-service-digital">
-                        <div class="image-digital">
-                            <img src="images/digital.jpg" alt="Digital Transformation">
+                <div class="wrapper-container">
+                    <!-- wrapper for the content, h2 and each service. For desktop a grid would be use, 6 columns. H1 would take the 6 columns of the first rows, two first services will take secon row, three columns for the first service, the last three for the second service. Last three services will take the last row, two columns for each service  -->
+                    <div class="wrapper-services">
+                        <h2>Our Services</h2>
+                        <!-- Wrapper for the DIGITAL service. Contain the image 100% widt. A background.  -->
+                        <div class="wrapper-service-digital">
+                            <div class="image-digital">
+                                <img src="images/digital.jpg" alt="Digital Transformation">
+                            </div>
+                            <h3>Digital Transformation</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
+                            <!-- Adding some padding, background color, color (font), border. Depending on the measurements (or colors) the same class is used for the other buttons. Different for the welcome button link  -->
+                            <div>
+                                <a href="#">Digital Plans <i class="fa-solid fa-caret-right"></i></a>
+                            </div>
                         </div>
-                        <h3>Digital Transformation</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
-                        <!-- Adding some padding, background color, color (font), border. Depending on the measurements (or colors) the same class is used for the other buttons. Different for the welcome button link  -->
-                        <div>
-                            <a href="#">Digital Plans <i class="fa-solid fa-caret-right"></i></a>
+                        <!-- Wrapper for the MARKETING service -->
+                        <div class="wrapper-service-marketing">
+                            <div class="image-marketing">
+                                <img src="images/marketing.jpg" alt="Marketing">
+                            </div>
+                            <h3>Marketing</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
+                            <div>
+                                <a href="#">Marketing Plans <i class="fa-solid fa-caret-right"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Wrapper for the MARKETING service -->
-                    <div class="wrapper-service-marketing">
-                        <div class="image-marketing">
-                            <img src="images/marketing.jpg" alt="Marketing">
+                        <!-- Wrapper for the VIDEO service -->
+                        <div class="wrapper-service-video">
+                            <div class="image-video">
+                                <img src="images/video.jpg" alt="Video Production">
+                            </div>
+                            <h3>Video Production</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
+                            <div>
+                                <a href="#">Video Plans <i class="fa-solid fa-caret-right"></i></a>
+                            </div>
                         </div>
-                        <h3>Marketing</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
-                        <div>
-                            <a href="#">Marketing Plans <i class="fa-solid fa-caret-right"></i></a>
+                        <!-- Wrapper for the WEB service -->
+                        <div class="wrapper-service-web">
+                            <div class="image-web">
+                                <img src="images/web.jpg" alt="Web Development">
+                            </div>
+                            <h3>Web Development</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
+                            <div>
+                                <a href="#">Web Plans <i class="fa-solid fa-caret-right"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Wrapper for the VIDEO service -->
-                    <div class="wrapper-service-video">
-                        <div class="image-video">
-                            <img src="images/video.jpg" alt="Video Production">
-                        </div>
-                        <h3>Video Production</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
-                        <div>
-                            <a href="#">Video Plans <i class="fa-solid fa-caret-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- Wrapper for the WEB service -->
-                    <div class="wrapper-service-web">
-                        <div class="image-web">
-                            <img src="images/web.jpg" alt="Web Development">
-                        </div>
-                        <h3>Web Development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
-                        <div>
-                            <a href="#">Web Plans <i class="fa-solid fa-caret-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- Wrapper for the Print service -->
-                    <div class="wrapper-service-print">
-                        <div class="image-print">
-                            <img src="images/print.jpg" alt="Print">
-                        </div>
-                        <h3>Print</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
-                        <div>
-                            <a href="#">Print Plans <i class="fa-solid fa-caret-right"></i></a>
+                        <!-- Wrapper for the Print service -->
+                        <div class="wrapper-service-print">
+                            <div class="image-print">
+                                <img src="images/print.jpg" alt="Print">
+                            </div>
+                            <h3>Print</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
+                            <div>
+                                <a href="#">Print Plans <i class="fa-solid fa-caret-right"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Bleed wrapper for the OUR VISION content -->
             <div class="bleed-wrapper-vision">
+                <div class="wrapper-container">
                 <!-- the background image will be in css file, cover, no repeat, width 100% -->
                 <!-- wrapper for the content, h2, paragraph and button -->
-                <div class="wrapper-vision">
-                    <h2>Our Vision</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ducimus saepe, est eveniet voluptatem, animi maiores minus, at nihil aliquam hic accusantium! Deserunt laborum corrupti, similique doloribus dolorum quod possimus.</p>
-                    <div>
-                        <!-- Button with the same measurements as the Services buttons, just adding different color, background color (opacity). -->
-                        <a href="#">Learn More <i class="fa-solid fa-caret-right"></i></a>
+                    <div class="wrapper-vision">
+                        <h2>Our Vision</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ducimus saepe, est eveniet voluptatem, animi maiores minus, at nihil aliquam hic accusantium! Deserunt laborum corrupti, similique doloribus dolorum quod possimus.</p>
+                        <div>
+                            <!-- Button with the same measurements as the Services buttons, just adding different color, background color (opacity). -->
+                            <a href="#">Learn More <i class="fa-solid fa-caret-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- TEAM Section -->
             <!-- Bleed wrapper for the Our Team content. Adding a padding -->
             <div id="section" class="bleed-wrapper-team">
+                <div class="wrapper-container">
                 <!-- wrapper for the content, h2 and two divs for each person -->
                 <!-- A gruid with two columns, 3 rows. H1 first row, second row for the first person, first column the image, the second column the div with the content. Third row for the second person, first column the div with the content, and the second column the image -->
-                <div class="wrapper-team">
-                    <h2>Our Team</h2>
-                    <!-- Wrapper for the first person, image and text content -->
-                    <div class="wrapper-team-john">
-                        <div class="team-image-john">
-                            <img src="images/john.jpg" alt="John Doe CEO">
+                    <div class="wrapper-team">
+                        <h2>Our Team</h2>
+                        <!-- Wrapper for the first person, image and text content -->
+                        <div class="wrapper-team-john">
+                            <div class="team-image-john">
+                                <img src="images/john.jpg" alt="John Doe CEO">
+                            </div>
+                            <div class="team-content-john">
+                                <h3>John Doe</h3>
+                                <h4>CEO and Co-owner</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam vel dolor eum voluptates ab vero quis fuga? Suscipit neque fugit voluptatem magni cumque aliquam tempore corporis iure soluta consequuntur.</p>
+                            </div>
                         </div>
-                        <div class="team-content-john">
-                            <h3>John Doe</h3>
-                            <h4>CEO and Co-owner</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam vel dolor eum voluptates ab vero quis fuga? Suscipit neque fugit voluptatem magni cumque aliquam tempore corporis iure soluta consequuntur.</p>
-                        </div>
-                    </div>
-                    <!-- Wrapper for the second person, image and text content -->
-                    <div class="wrapper-team-bob">
-                        <div class="team-image-bob">
-                            <img src="images/bob.jpg" alt="Bob Rite CFO">
-                        </div>
-                        <div class="team-content-bob">
-                            <h3>Bob Rite</h3>
-                            <h4>CFO and Co-owner</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam vel dolor eum voluptates ab vero quis fuga? Suscipit neque fugit voluptatem magni cumque aliquam tempore corporis iure soluta consequuntur.</p>
+                        <!-- Wrapper for the second person, image and text content -->
+                        <div class="wrapper-team-bob">
+                            <div class="team-image-bob">
+                                <img src="images/bob.jpg" alt="Bob Rite CFO">
+                            </div>
+                            <div class="team-content-bob">
+                                <h3>Bob Rite</h3>
+                                <h4>CFO and Co-owner</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam vel dolor eum voluptates ab vero quis fuga? Suscipit neque fugit voluptatem magni cumque aliquam tempore corporis iure soluta consequuntur.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -189,67 +199,71 @@
             <!-- CONTACT US Section -->
             <!-- Bleed wrapper for the Contact Us content -->
             <div id="contact-us" class="bleed-wrapper-contact">
-                <!-- Wrapper for the content, h2, and form -->
-                <!-- Grid with two columns and 3 rows. First row for h2, second row and first column for the form. Second column in second row the location. The third row is for the hours of operation, the table will display in the two columns. -->
-                <div class="wrapper-contact">
-                    <h2>Contact Us</h2>
-                    <div class="contact-form">
-                        <form action="index.html" method="get">
-                            <h3>Send us a message</h3>
-                            <!-- Ading a div for each label with input -->
-                            <div>
-                                <label for="name">Full Name</label>
-                                <input type="text" name="name" id="name">
-                            </div>
-                            <div>
-                                <label for="email">Email</label>
-                                <input type="email" name="email" id="email">
-                            </div>
-                            <div>
-                                <label for="message">Message</label>
-                                <textarea name="message" id="message" cols="20" rows="4"></textarea>
-                            </div>
-                            
-                            <button type="submit">Send</button>
-                        </form>
-                    </div>
-                    <!-- Table will be at the bottom in desktop -->
-                    <div class="table-hours">
-                        <h3>Hours of operation</h3>
-                        <table class="hours-operation">
-                            <!--  -->
-                            <thead class="table-header">
-                                <tr>
-                                    <th>Days</th>
-                                    <th>Hours</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Monday - Friday</td>
-                                    <td>9 AM - 6 PM</td>
-                                </tr>
-                                <tr>
-                                    <td>Saturday - Sunday</td>
-                                    <td>Closed</td>
-                                </tr>
-                                </tbody>
-                        </table>
-                    </div>
-                    <!-- Map will be next to form in desktop -->
-                    <div class="location-map">
-                        <h3>Location</h3>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22431.555641255592!2d-75.7930345256836!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1711771227189!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="wrapper-container">
+                    <!-- Wrapper for the content, h2, and form -->
+                    <!-- Grid with two columns and 3 rows. First row for h2, second row and first column for the form. Second column in second row the location. The third row is for the hours of operation, the table will display in the two columns. -->
+                    <div class="wrapper-contact">
+                        <h2>Contact Us</h2>
+                        <div class="contact-form">
+                            <form action="index.html" method="get">
+                                <h3>Send us a message</h3>
+                                <!-- Ading a div for each label with input -->
+                                <div>
+                                    <label for="name">Full Name</label>
+                                    <input type="text" name="name" id="name">
+                                </div>
+                                <div>
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                                <div>
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message" cols="20" rows="4"></textarea>
+                                </div>
+                                
+                                <button type="submit">Send</button>
+                            </form>
+                        </div>
+                        <!-- Table will be at the bottom in desktop -->
+                        <div class="table-hours">
+                            <h3>Hours of operation</h3>
+                            <table class="hours-operation">
+                                <!--  -->
+                                <thead class="table-header">
+                                    <tr>
+                                        <th>Days</th>
+                                        <th>Hours</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Monday - Friday</td>
+                                        <td>9 AM - 6 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Saturday - Sunday</td>
+                                        <td>Closed</td>
+                                    </tr>
+                                    </tbody>
+                            </table>
+                        </div>
+                        <!-- Map will be next to form in desktop -->
+                        <div class="location-map">
+                            <h3>Location</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22431.555641255592!2d-75.7930345256836!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1711771227189!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <footer>
-            <div class="content-footer">
-                <!-- paragraph will wrap to the left. Content will be centered in the desktop version -->
-                <p>&copy; Copyright Three Star Media, 2020</p>
-                <p>All images are taken from Unsplash</p>
+            <div class="wrapper-container">
+                <div class="content-footer">
+                    <!-- paragraph will wrap to the left. Content will be centered in the desktop version -->
+                    <p>&copy; Copyright Three Star Media, 2020</p>
+                    <p>All images are taken from Unsplash</p>
+                </div>
             </div>
         </footer>
     </div>
