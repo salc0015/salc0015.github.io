@@ -84,3 +84,54 @@ body{
     background: none; /*The button has no background color*/
     padding: 7px 10px; /*Padding inside the button*/
 }
+ 
+/* <------------- BANNER -------------> */
+
+.bleed-wrapper-welcome{
+    width: 100%; 
+    /* display: flex; */
+    background-image: url(../images/main-banner.jpg); /*Sets a background image for the banner*/
+    background-size: cover; /*Background image cover the entire element*/
+    background-repeat: no-repeat; /*Ensures that the background image doesnt repeat*/
+    padding: 70px 0; /*Paddint to the inside of the element. Top and bottom*/
+}
+
+.wrapper-welcome-content{
+    /*display: flex; /*Arrange text and button inside the container
+    justify-content: center;*/
+    background-color: rgba(0, 0, 0, 0.6); /*Represents a semi-transparent black color, with 60% opacity*/
+    color: white; 
+    /* padding: 15px; */
+}
+
+.wrapper-welcome-content h1{
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 6.7rem; /*Provide space between lines of the text in the h1*/
+} 
+
+.wrapper-welcome-content p{
+    font-weight: 350; /*Sets the weight of the font*/
+    padding: 30px 0 20px 0; /*Padding to the paragraph, top and bottom*/
+  }
+
+.button{
+    background-color: #c78b07; /*Background color of the button*/
+    width: 240px; /*Fixed width, always be 240px*/
+    padding: 30px 0 35px 0; /*Padding inside the button, just top and bottom*/
+}
+
+.button a{
+    color: #222; /*Sets text color of the anchor tags*/
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none; /*Removes default text decorations from anchor tag*/
+    display: flex; /*Flexbox layout to the anchor tag. Align and center content*/
+    justify-content: center; /*Aligns anchor tag in the center of the container (button)*/
+    align-items: baseline; /*Align flex items along the baseline of the container. Helps to align the arrow with the text */
+}
+
+.button i{
+    margin-left: 15px; /*Gap between the icon and the anchor text*/
+    font-size: 1.6rem; 
+}
