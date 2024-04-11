@@ -164,3 +164,84 @@ h2{ /*For all h2*/
     margin: 15px 0; /*Sets the margin around each p, top and bottom margin*/
     line-height: 1.2rem;
 }
+
+/* <------------- SERVICES -------------> */
+
+.image-services img{
+    width: 100%; /*Sets the width of all images (services) to 100% of their container width. Image fully responsive*/
+}
+
+.wrapper-services{
+    background-color: white;
+}
+
+.wrapper-services h2{
+    margin: 30px 0 20px 0; /*Applies top and botton margin for the h2*/
+}
+
+.wrapper-service{
+    background-color: #ffe6ac; /*Add background color for the text container*/
+    margin-bottom: 15px; /*Helps to separate each service (div)*/
+}
+
+.services-content-text{
+    padding: 15px; /*Adds a space on all four sides inside the element*/
+}
+
+.wrapper-service h3{ /*Style for all the h3 heading in the service section*/
+    font-size: 1.7rem;
+    font-weight: 680;
+    margin: 10px 0;
+}
+
+.wrapper-service p{ /*Style for all the paragraphs in the service section*/
+    font-size: .8rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+    margin: 10px 0;
+  }
+
+.button-services{ /*Style for all the anchor buttons in the service section*/
+    background-color: #222;
+    padding: 30px 0 35px 0;
+    margin-top: 15px;
+}
+
+/* The anchor buttons have different widths, so add different class for each one of them */
+
+.button-services-digital{
+    width: 210px;
+}
+
+.button-services-marketing{
+    width: 240px;
+}
+  
+.button-services-video{
+    width: 202px;
+}
+  
+.button-services-web{
+    width: 192px;
+}
+  
+.button-services-print{
+    width: 195px;
+}
+
+.button-services a{ /*Applies style for the anchor text*/
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+    display: flex; /*Helps center the content inside the div (button)*/
+    justify-content: center;
+    align-items: baseline; /*Aligns flex items along the baseline of the container. Aligns the anchor text with the arrow*/
+  }
+
+.button-services i{ /*Style for the i element*/
+  margin-left: 15px; 
+  font-size: 1.6rem;
+}
+
+/* <------------- VISION -------------> */
