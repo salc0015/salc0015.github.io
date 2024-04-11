@@ -1,0 +1,16 @@
+/* Apply a box model to all elements. Border and padding are included in the total width and height. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Global font styling for the website */
+body{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
