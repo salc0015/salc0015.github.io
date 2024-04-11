@@ -21,39 +21,32 @@ body{
     width: 100%;
 }
 
-  /* Adds background color to the menu section (logo, nav, search bar) */
 .bleed-wrapper-menu{
-    background-color: #222;
+    background-color: #222; /* Adds background color to the menu section (logo, nav, search bar) */
 }
 
-  /* Consistent space between the container's border and its content. Applying for each section */
 .wrapper-container{
-    padding: 15px;
+    padding: 15px; /* Consistent space between the container's border and its content. Applying for each section */
 }
 
-  /* Sets background color for the logo wrapper */
 .wrapper-logo{
-    background-color: #c78b07;
+    background-color: #c78b07; /* Sets background color for the logo wrapper */
 }
 
-  /* Adds top margin, creating space above the logo, inside its wrapper */
 .wrapper-logo img{
-    margin-top: 15px;
+    margin-top: 15px; /*Adds top margin, creating space above the logo, inside its wrapper*/
 }
 
 
 /* <------------- HEADER - MENU -------------> */
-  /* Removes default list item markers */
 .menu-list{
-    list-style: none;
+    list-style: none; /*Removes default list item markers*/
 }
 
-/* Width of each list item to 100%. Display flex applies a flexbox layout to the list items, it enables the alignment and distribution of the anchor tags.
-Justify content align the anchor tags in the center of the list items. */
 .menu-list li{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    width: 100%; /*Width of each list item to 100%.*/
+    display: flex; /*Display flex applies a flexbox layout to the list items, it enables the alignment and distribution of the anchor tags.*/
+    justify-content: center; /*Justify content align the anchor tags in the center of the list items.*/
 }
 
 .menu-list a{
@@ -74,3 +67,21 @@ Justify content align the anchor tags in the center of the list items. */
 }
 
 /* <------------- SEARCH BAR -------------> */
+
+.search-bar form{
+    display: flex; /*Input and button will be laid out in a linear, flexible manner*/
+    margin-top: 10px; /*Spacing useful for separating the search bar form from the menu */
+}
+
+.search-bar input{
+    width: 100%; /*Width of the input field will stretch to fill the entire width of the .search-bar container. Input will be responsive*/
+    font-size: 1.2rem; /*Font size inside the input field*/
+}
+
+.search-bar button{
+    border: 1.5px solid #c78b07; /*Border to the button*/
+    color: #c78b07; 
+    font-size: 1.5rem;
+    background: none; /*The button has no background color*/
+    padding: 7px 10px; /*Padding inside the button*/
+}
