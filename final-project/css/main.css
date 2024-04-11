@@ -245,3 +245,125 @@ h2{ /*For all h2*/
 }
 
 /* <------------- VISION -------------> */
+
+.bleed-wrapper-vision{
+    width: 100%;
+    background-image: url(../images/vision.jpg); /*Applies background image*/
+    background-size: cover; /*Background image covers the entire area of the wrapper*/
+    background-repeat: no-repeat;
+    padding: 35px 0 5px 0; /*Padding inside the element, top and bottom*/
+    background-position: 60% 40%; /*Positions the background image within the element. 60% is the horizontal position, 40% the vertical position*/
+}
+
+h3{ /*This applies for all the h3 elements*/
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.wrapper-vision h3{
+    color: white;
+}
+
+.wrapper-vision p{ /*Style for the paragraph*/
+    margin: 30px 0 25px 0;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: white;
+}
+
+.button-vision{ /*Style for the anchor button*/
+    width: 230px; /*Sets the width of the button*/
+    background-color: rgba(0, 0, 0, 0.6); /*Background color to a semi-transparent black*/
+    padding: 35px 0 40px 0; /*Padding inside the button top and bottom*/
+    border: 1px solid #c78b07;
+}
+
+.button-vision a{ /*Style for the anchor text*/
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-decoration: none;
+    display: flex; /*Helps to align and distribute space inside the button, easy to center content*/
+    justify-content: center; /*Aligns the text and icon to the center*/
+    align-items: baseline; /*Aligns the anchor text along the baseline of the container. Text and arrow on the same line*/
+}
+
+.button-vision i{ /*Style for the icon*/
+    margin-left: 15px;
+    font-size: 1.6rem;
+}
+
+/* <------------- TEAM -------------> */
+
+.wrapper-team h2{
+    margin: 35px 0 25px 0; /*Margin top and bottom for h2*/
+}
+
+.wrapper-team-person{ /*Adding backgroun color to my wrapper*/
+    background-color: #ffe6ac;
+}
+
+.wrapper-team-john{ /*Adding space between the containers of each person*/
+    margin-bottom: 15px;
+}
+
+.team-image img{ /*Sets width of images to 100% of ther container's width*/
+    width: 100%;
+}
+
+.team-content{
+    padding: 20px 15px 30px 15px; /*Padding inside the container of each person*/
+}
+
+.team-content h4{ /*Add space between headings and paragraphs*/
+    margin-top: 13px;
+    font-weight: 670;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #c78b07;
+    margin-bottom: 15px;
+}
+
+.team-content p{ /*Style for the paragraphs*/
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+}
+
+/* <------------- CONTACT - FORM -------------> */
+
+.wrapper-contact{ /*Adding more space between the team section and the form */
+    margin-top: 60px;
+}
+
+.contact-form h3{ /*Adding space top and bottom*/
+    margin: 30px 0 20px 0;
+}
+
+.contact-form label{
+    font-weight: 400;
+    font-size: .95rem;
+    margin: 11px 0 7px 0;
+    display: flex; /*Align labels with the form*/
+}
+
+.contact-form input{ /*Style for the inputs. */
+    width: 100%; /*Input fields stretch to fill the fill width of the form*/
+    border: 1px solid #222;
+    padding: 10px 5px; /*Padding inside the input fields*/
+}
+
+.contact-form textarea{ 
+    width: 100%;
+    height: 150px; /*Fixed height, providing enough space*/
+}
+
+.button-form{ /*Style for the button*/
+    margin: 25px 0 10px 0; /*Margin around the button, top and bottom*/
+    background-color: #222;
+    color: #c78b07;
+    font-size: 1.5rem;
+    border: 0px;
+    padding: 6px; /*space between the text inside the button and its border*/
+}
+
+/* <------------- CONTACT - HOURS -------------> */
