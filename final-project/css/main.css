@@ -13,30 +13,64 @@ body{
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
-  }
+}
 
 /* <------------- HEADER - LOGO -------------> */
 /* Maximum width for .wrapper-general class elements. Never exceed 100% of the parent element's width */
 .wrapper-general{
     width: 100%;
-  }
+}
 
   /* Adds background color to the menu section (logo, nav, search bar) */
 .bleed-wrapper-menu{
     background-color: #222;
-  }
+}
 
   /* Consistent space between the container's border and its content. Applying for each section */
 .wrapper-container{
     padding: 15px;
-  }
+}
 
   /* Sets background color for the logo wrapper */
-  .wrapper-logo{
+.wrapper-logo{
     background-color: #c78b07;
-  }
+}
 
   /* Adds top margin, creating space above the logo, inside its wrapper */
 .wrapper-logo img{
     margin-top: 15px;
-  }
+}
+
+
+/* <------------- HEADER - MENU -------------> */
+  /* Removes default list item markers */
+.menu-list{
+    list-style: none;
+}
+
+/* Width of each list item to 100%. Display flex applies a flexbox layout to the list items, it enables the alignment and distribution of the anchor tags.
+Justify content align the anchor tags in the center of the list items. */
+.menu-list li{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-list a{
+    width: 20%; /* The width of each anchor tag is 20% */
+    padding: 25px 0 15px 0; /* Adding padding to the anchor tags, top and bottom. */
+    display: flex; /* Display flex applies a flexbox layout to the anchor tags. */
+    justify-content: center;/* he justify content centers horizontally the text of the anchor tags. */
+    text-decoration: none; /*Removes default inderlining of anchor tags*/
+    color: #c78b07;
+    font-size: 1.2rem;
+    font-weight: 400; 
+}
+
+.menu-list .menu-home{
+    width: 100%; /*Width of the .menu-home 100%. The Home link stretches across the entire width of its containing list item*/
+    color: #222;
+    background-color: #c78b07;
+}
+
+/* <------------- SEARCH BAR -------------> */
