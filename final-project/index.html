@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e734707962.js" crossorigin="anonymous"></script>
     <title>Final Project</title>
 </head>
@@ -29,7 +32,7 @@
                                 <!-- Menu-list will have a display flex, to align the items of the list to the center. I will aply a width of 100% so i can apply the same width and modify the first element of the list. Flex direction column for the mobile version, aligning element to the center -->
                                 <ul class="menu-list">
                                     <!-- The width of each element of my list will have a width of 100%, but only the first one (HOME) will have a different background and font color. Padding top and botton to separate each element.  -->
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a class="menu-home" href="index.html">Home</a></li>
                                     <li><a href="#about-us">About us</a></li>
                                     <li><a href="#service">Services</a></li>
                                     <li><a href="#section">Team</a></li>
@@ -51,16 +54,18 @@
             </div>
             <!-- Second bleed wrapper inside the header that will wrap the main title, a paragraph and a button. -->
             <div class="bleed-wrapper-welcome">
-                <div class="wrapper-container">
+                <div class="wrapper-container-no">
                 <!-- BANNER IMAGE in CSS. Bakcground image, size cover, width of 100% -->
                 <!-- Wrapper for content h1, paragraph and button. Background with rgba applying an opacity. -->
                     <div class="wrapper-welcome-content">
-                        <!-- Adding a margin, line-heignt, besides the font size and font weigth -->
-                        <h1>Welcome to Three Star Media</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi incidunt ratione, libero ut nam eligendi error reprehenderit suscipit aliquam voluptatem ad eum officia perferendis fugit corporis ab necessitatibus rem. Molestiae.</p>
-                        <div>
-                            <!-- Adding some padding, background color, color (font), border. Depending on the measurements (or colors) the same class is used for the other buttons  -->
-                            <a href="#">Connect with us <i class="fa-solid fa-caret-right"></i></a>
+                        <div class="wrapper-container">
+                            <!-- Adding a margin, line-heignt, besides the font size and font weigth -->
+                            <h1>Welcome to Three Star Media</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi incidunt ratione, libero ut nam eligendi error reprehenderit suscipit aliquam voluptatem ad eum officia perferendis fugit corporis ab necessitatibus rem. Molestiae.</p>
+                            <div class="button">
+                                <!-- Adding some padding, background color, color (font), border. Depending on the measurements (or colors) the same class is used for the other buttons  -->
+                                <a href="#">Connect with us <i class="fa-solid fa-caret-right"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -71,16 +76,19 @@
             <!-- ABOUT US Section -->
             <!-- Bleed Wrapper for the ABOUT US content. Background #ffe6ac and padding -->
             <div id="about-us" class="bleed-wrapper-about">
-                <!-- Wraper for the content that is the image, and text content (h2 and paragraph) -->
-                <div class="wrapper-about">
-                    <!-- wrapper for the image, 100% width. For desktop version will apply a float left for the next be next to image. -->
-                    <div class="image-about">
-                        <img src="images/about-us.jpg" alt="Pin pong table for the about us content">
-                    </div>
-                    <!-- wrapper for the text content about us -->
-                    <div class="text-about">
-                        <h2>About Us</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, veritatis aliquid recusandae quas corporis qui corrupti deserunt necessitatibus unde. Ad aliquam similique corrupti! Nam consequatur adipisci fugit quasi, rerum dolores!</p>
+                <div class="wrapper-container">
+                    <!-- Wraper for the content that is the image, and text content (h2 and paragraph) -->
+                    <div class="wrapper-about">
+                        <!-- wrapper for the image, 100% width. For desktop version will apply a float left for the next be next to image. -->
+                        <div class="image-about">
+                            <img src="images/about-us.jpg" alt="Pin pong table for the about us content">
+                        </div>
+                        <!-- wrapper for the text content about us -->
+                        <div class="text-about">
+                            <h2>About Us</h2>
+                            <p class="common-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, veritatis aliquid recusandae quas corporis qui corrupti deserunt necessitatibus unde. Ad aliquam similique corrupti! Nam consequatur adipisci fugit quasi, rerum dolores!</p>
+                            <p class="common-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, veritatis aliquid recusandae quas corporis qui corrupti deserunt necessitatibus unde. Ad aliquam similique corrupti! Nam consequatur adipisci fugit quasi, rerum dolores!</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -92,59 +100,69 @@
                     <div class="wrapper-services">
                         <h2>Our Services</h2>
                         <!-- Wrapper for the DIGITAL service. Contain the image 100% widt. A background.  -->
-                        <div class="wrapper-service-digital">
-                            <div class="image-digital">
+                        <div class="wrapper-service wrapper-service-digital">
+                            <div class="image-services">
                                 <img src="images/digital.jpg" alt="Digital Transformation">
                             </div>
-                            <h3>Digital Transformation</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
-                            <!-- Adding some padding, background color, color (font), border. Depending on the measurements (or colors) the same class is used for the other buttons. Different for the welcome button link  -->
-                            <div>
-                                <a href="#">Digital Plans <i class="fa-solid fa-caret-right"></i></a>
+                            <div class="services-content-text">
+                                <h3>Digital Transformation</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
+                                <!-- Adding some padding, background color, color (font), border. Depending on the measurements (or colors) the same class is used for the other buttons. Different for the welcome button link  -->
+                                <div class="button-services button-services-digital">
+                                    <a href="#">Digital Plans <i class="fa-solid fa-caret-right"></i></a>
+                                </div>
                             </div>
                         </div>
                         <!-- Wrapper for the MARKETING service -->
-                        <div class="wrapper-service-marketing">
-                            <div class="image-marketing">
+                        <div class="wrapper-service wrapper-service-marketing">
+                            <div class="image-services">
                                 <img src="images/marketing.jpg" alt="Marketing">
                             </div>
-                            <h3>Marketing</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
-                            <div>
-                                <a href="#">Marketing Plans <i class="fa-solid fa-caret-right"></i></a>
+                            <div class="services-content-text">
+                                <h3>Marketing</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
+                                <div class="button-services button-services-marketing">
+                                    <a href="#">Marketing Plans <i class="fa-solid fa-caret-right"></i></a>
+                                </div>
                             </div>
                         </div>
                         <!-- Wrapper for the VIDEO service -->
-                        <div class="wrapper-service-video">
-                            <div class="image-video">
+                        <div class="wrapper-service wrapper-service-video">
+                            <div class="image-services">
                                 <img src="images/video.jpg" alt="Video Production">
                             </div>
-                            <h3>Video Production</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
-                            <div>
-                                <a href="#">Video Plans <i class="fa-solid fa-caret-right"></i></a>
+                            <div class="services-content-text">
+                                <h3>Video Production</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
+                                <div class="button-services button-services-video">
+                                    <a href="#">Video Plans <i class="fa-solid fa-caret-right"></i></a>
+                                </div>
                             </div>
                         </div>
                         <!-- Wrapper for the WEB service -->
-                        <div class="wrapper-service-web">
+                        <div class="wrapper-service wrapper-service-web">
                             <div class="image-web">
                                 <img src="images/web.jpg" alt="Web Development">
                             </div>
-                            <h3>Web Development</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
-                            <div>
-                                <a href="#">Web Plans <i class="fa-solid fa-caret-right"></i></a>
+                            <div class="services-content-text">
+                                <h3>Web Development</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
+                                <div class="button-services button-services-web">
+                                    <a href="#">Web Plans <i class="fa-solid fa-caret-right"></i></a>
+                                </div>
                             </div>
                         </div>
                         <!-- Wrapper for the Print service -->
-                        <div class="wrapper-service-print">
+                        <div class="wrapper-service wrapper-service-print">
                             <div class="image-print">
                                 <img src="images/print.jpg" alt="Print">
                             </div>
-                            <h3>Print</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
-                            <div>
-                                <a href="#">Print Plans <i class="fa-solid fa-caret-right"></i></a>
+                            <div class="services-content-text">
+                                <h3>Print</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit nulla provident nostrum, in est! Ex laudantium illum aspernatur accusamus quidem obcaecati, ut exercitationem excepturi? Quaerat dolores repudiandae non necessitatibus!</p>
+                                <div class="button-services button-services-print">
+                                    <a href="#">Print Plans <i class="fa-solid fa-caret-right"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -156,9 +174,9 @@
                 <!-- the background image will be in css file, cover, no repeat, width 100% -->
                 <!-- wrapper for the content, h2, paragraph and button -->
                     <div class="wrapper-vision">
-                        <h2>Our Vision</h2>
+                        <h3>Our Vision</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ducimus saepe, est eveniet voluptatem, animi maiores minus, at nihil aliquam hic accusantium! Deserunt laborum corrupti, similique doloribus dolorum quod possimus.</p>
-                        <div>
+                        <div class="button-vision">
                             <!-- Button with the same measurements as the Services buttons, just adding different color, background color (opacity). -->
                             <a href="#">Learn More <i class="fa-solid fa-caret-right"></i></a>
                         </div>
@@ -174,22 +192,22 @@
                     <div class="wrapper-team">
                         <h2>Our Team</h2>
                         <!-- Wrapper for the first person, image and text content -->
-                        <div class="wrapper-team-john">
-                            <div class="team-image-john">
+                        <div class="wrapper-team-person wrapper-team-john">
+                            <div class="team-image">
                                 <img src="images/john.jpg" alt="John Doe CEO">
                             </div>
-                            <div class="team-content-john">
+                            <div class="team-content team-content-john">
                                 <h3>John Doe</h3>
                                 <h4>CEO and Co-owner</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam vel dolor eum voluptates ab vero quis fuga? Suscipit neque fugit voluptatem magni cumque aliquam tempore corporis iure soluta consequuntur.</p>
                             </div>
                         </div>
                         <!-- Wrapper for the second person, image and text content -->
-                        <div class="wrapper-team-bob">
-                            <div class="team-image-bob">
+                        <div class="wrapper-team-person wrapper-team-bob">
+                            <div class="team-image">
                                 <img src="images/bob.jpg" alt="Bob Rite CFO">
                             </div>
-                            <div class="team-content-bob">
+                            <div class="team-content team-content-bob">
                                 <h3>Bob Rite</h3>
                                 <h4>CFO and Co-owner</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam vel dolor eum voluptates ab vero quis fuga? Suscipit neque fugit voluptatem magni cumque aliquam tempore corporis iure soluta consequuntur.</p>
@@ -223,7 +241,7 @@
                                     <textarea name="message" id="message" cols="20" rows="4"></textarea>
                                 </div>
                                 
-                                <button type="submit">Send</button>
+                                <button class="button-form" type="submit">Send</button>
                             </form>
                         </div>
                         <!-- Table will be at the bottom in desktop -->
