@@ -135,3 +135,32 @@ body{
     margin-left: 15px; /*Gap between the icon and the anchor text*/
     font-size: 1.6rem; 
 }
+
+/* <------------- ABOUT US -------------> */
+
+.bleed-wrapper-about{
+    background-color: #ffe6ac; /*Background color for the section about us*/
+}
+
+.image-about img{
+    width: 100%; /*The image will adjust the size of the container*/
+}
+
+h2{ /*For all h2*/
+    font-size: 2.5rem; /*Set the size of the font for h2 headings*/
+    font-weight: 700;
+}
+
+.text-about h2{ /*Div that contains the text content*/
+    margin: 25px 0; /*Top and bottom margin*/
+}
+
+.common-text{ /*Paragraphs inside about us*/
+    font-size: .9rem;
+    font-weight: 370;
+}
+
+.text-about p{ /*Div that contains the text content*/
+    margin: 15px 0; /*Sets the margin around each p, top and bottom margin*/
+    line-height: 1.2rem;
+}
