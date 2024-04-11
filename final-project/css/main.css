@@ -14,3 +14,29 @@ body{
     font-variation-settings:
       "wdth" 100;
   }
+
+/* <------------- HEADER - LOGO -------------> */
+/* Maximum width for .wrapper-general class elements. Never exceed 100% of the parent element's width */
+.wrapper-general{
+    width: 100%;
+  }
+
+  /* Adds background color to the menu section (logo, nav, search bar) */
+.bleed-wrapper-menu{
+    background-color: #222;
+  }
+
+  /* Consistent space between the container's border and its content. Applying for each section */
+.wrapper-container{
+    padding: 15px;
+  }
+
+  /* Sets background color for the logo wrapper */
+  .wrapper-logo{
+    background-color: #c78b07;
+  }
+
+  /* Adds top margin, creating space above the logo, inside its wrapper */
+.wrapper-logo img{
+    margin-top: 15px;
+  }
