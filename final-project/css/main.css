@@ -433,11 +433,56 @@ footer{ /*Sets the background color of the footer*/
 
 @media screen and (min-width: 760px) {
     .wrapper-general{
-      max-width: 1200px;
-      margin: auto;
+      max-width: 1200px; /*Sets maximum width to 1200*/
+      margin: auto; /*Centers the wrapper element */
     }
 
     .wrapper-container-desktop{
-        margin: 0 60px;
+        margin: 0 80px; /*Sets margin left and rigt to 80px. Centers the content*/
     }
+
+    /* <------------- HEADER - LOGO, MENU, SEARCH -------------> */
+
+    .wrapper-logo-menu-search{
+        display: flex; /*Flexible box to the container, making logo, menu, search bar flexible items*/
+        align-items: center; /*Centers the items vertically*/
+        justify-content: space-between; /*Distributes the items evenly, space between each item, align first item to the start and the last item to the end*/
+        padding: 20px 0; /*Paddin top and bottom*/
+    }
+
+    .wrapper-logo img{
+        margin-top: 0; /*Removes top margin*/
+    }
+
+    /* .nav-menu{
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+    } */
+
+    .menu-list{
+        display: flex; /*Flexible box layout, list items horizontal*/
+        margin-left: 30px; /*Left margin to the list*/
+    }
+
+    .menu-list li{
+        /* display: flex;
+        justify-content: center; */
+        white-space: nowrap;
+        margin: 0 10px;
+    }
+
+    .menu-list a{
+        width: 100%; /*Width of each anchor tag to 100%*/
+        padding: 22px 26px; /*Padding inside the anchor tags*/
+    }
+
+     /* <------------- ABOUT US -------------> */
+
+
+    /* 
+
+    */
+
+
   }  
