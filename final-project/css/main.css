@@ -535,4 +535,23 @@ footer{ /*Sets the background color of the footer*/
         width: 100%; /*sets the width to 100%. Button stretches to fill the available space*/
     }
 
+
+    /* <------------- VISION -------------> */
+
+    .wrapper-vision{
+        padding-top: 0; 
+    }
+
+    .bleed-wrapper-vision{
+        background-position: 45% 55%; /*Positions the background image within the element. 45% is the horizontal position, 55% the vertical position*/
+    }
+    
+     /* <------------- TEAM -------------> */
+
+
+
+    /* 
+
+    */
+
   }  
