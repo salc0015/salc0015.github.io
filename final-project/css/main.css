@@ -436,4 +436,8 @@ footer{ /*Sets the background color of the footer*/
       max-width: 1200px;
       margin: auto;
     }
+
+    .wrapper-container-desktop{
+        margin: 0 60px;
+    }
   }  
