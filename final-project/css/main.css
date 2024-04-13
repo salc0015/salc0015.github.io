@@ -546,7 +546,7 @@ footer{ /*Sets the background color of the footer*/
         background-position: 45% 55%; /*Positions the background image within the element. 45% is the horizontal position, 55% the vertical position*/
     }
     
-     /* <------------- TEAM -------------> */
+    /* <------------- TEAM -------------> */
 
     .wrapper-team{
         display: grid;
@@ -604,8 +604,37 @@ footer{ /*Sets the background color of the footer*/
         grid-area: t2; /*Image of Bob in the first grid area (first column*/
     }
 
-    /* 
+    /* <------------- CONTACT - FORM -------------> */
 
-    */
+    .wrapper-contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr; /*Divides the container into 2 column of equal width*/
+        grid-template-rows: auto; /*Each row height adjusts based on content*/
+        grid-gap: 10px; /*Gap 10px between the rows and columns*/
+        grid-template-areas: /*Defines template areas, area t1, t2, t3, t4*/
+        "t1 t1"
+        "t2 t4"
+        "t3 t3";
+    }
+
+    .wrapper-contact h2{
+        grid-area: t1; /*h2 element to the first grid area, span across the entire width*/
+    }
+
+    .contact-form{
+        grid-area: t2; /*Contact form in second grid area, first column second row*/
+    }
+
+    .table-hours{
+        grid-area: t3; /*Table in third row, both columns*/
+    }
+
+    .location-map{
+        grid-area: t4; /*map in second column, second row*/
+    }
+
+    .location-map h3{
+        margin-top: 30px;
+    }
 
   }  
