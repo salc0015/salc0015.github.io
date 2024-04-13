@@ -479,10 +479,60 @@ footer{ /*Sets the background color of the footer*/
 
      /* <------------- ABOUT US -------------> */
 
+    .wrapper-about{
+        display: grid; /*Grid layout for the contents inside this wrapper*/
+        grid-template-columns: 1fr 1fr; /*Divide the container into 2 columns*/
+        /* grid-template-rows: 1fr; */
+        gap: 15px; /*Space between grid items*/
+    }
 
-    /* 
+    .text-about h2{
+        margin-top: 10px; /*margin 10px on all sides of h2 about section*/
+    }
 
-    */
+    /* <------------- SERVICES -------------> */
 
+    .wrapper-services{
+        display: grid; /*grid layout for elements inside the wrapper*/
+        grid-template-columns: repeat(6,1fr); /*creates six columns of equal width in the grid*/
+        grid-template-rows: auto auto auto; /*creates 3 rows, each height adjusting automatically based on content size*/
+        grid-gap: 10px; /*Gap between grid cells*/
+        grid-template-areas: 
+        "b1 b1 b1 b1 b1 b1" /*First row spans, all 6 columns for heading*/
+        "b2 b2 b2 b3 b3 b3" /*Second row is divided in 2 areas*/
+        "b4 b4 b5 b5 b6 b6"; /*Third row is divided in 3 areas*/
+    }
+
+    .wrapper-services h2{
+        grid-area: b1; /*Position the h2 heading in the grid area named b1. First row, 6 columns*/
+    }
+
+    .wrapper-service-digital{
+        grid-area: b2; /*Digital service block to the grid area b2, spans the first 3 columns of second row*/
+    }
+
+    .wrapper-service-marketing{
+        grid-area: b3; /*Marketing service block to the grid area b3, spans the last 3 columns of second row*/
+    }
+
+    .wrapper-service-video{
+        grid-area: b4; /*Video service block to the grid area b4, spans the first two columns of third row*/
+    }
+
+    .wrapper-service-web{
+        grid-area: b5; /*Web service block to the frid area b5, spans the second two columns of thir row*/
+    }
+
+    .wrapper-service-print{
+        grid-area: b6; /*Print service block to the grid area b6, spans the third two columns of third row*/
+    }
+
+    .wrapper-service{
+        margin-bottom: 0; /*Removes any bottom margin*/
+    }
+
+    .button-services{
+        width: 100%; /*sets the width to 100%. Button stretches to fill the available space*/
+    }
 
   }  
