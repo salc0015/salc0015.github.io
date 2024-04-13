@@ -18,6 +18,8 @@ body{
 /* Maximum width for .wrapper-general class elements. Never exceed 100% of the parent element's width */
 .wrapper-general{
     width: 100%;
+    /* max-width: 1200px;
+    margin: 0 auto; */
 }
 
 .bleed-wrapper-menu{
@@ -94,6 +96,7 @@ body{
     background-size: cover; /*Background image cover the entire element*/
     background-repeat: no-repeat; /*Ensures that the background image doesnt repeat*/
     padding: 70px 0; /*Paddint to the inside of the element. Top and bottom*/
+    background-position: 40% 90%;
 }
 
 .wrapper-welcome-content{
@@ -367,3 +370,70 @@ h3{ /*This applies for all the h3 elements*/
 }
 
 /* <------------- CONTACT - HOURS -------------> */
+
+.table-hours{ /*Space between the table-hours div and the location div*/
+    margin-bottom: 25px;
+}
+
+.table-hours h3{ /*Space between the heading and the table*/
+    margin: 25px 0 15px 0;
+}
+
+.hours-operation{
+    width: 100%; /*Table stretches across the full width*/
+    border: 1px solid black; /*Applies a solid border around the table*/
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.hours-operation td{
+    border: 1px solid black; /*Solid border to each tx element*/
+    padding: 17px; /*Padding inside each td*/
+}
+
+.table-header{ /*Add color to the header*/
+    background-color: #ffe6ac;
+}
+
+.table-header th{
+    padding: 15px 0; /*Sets the padding inside each th element*/
+    border: 1px solid black; /*Border around each table header cell*/
+}
+
+/* <------------- CONTACT - LOCATION -------------> */
+
+.location-map h3{ /*Space between the h3 heading and the map*/
+    margin-bottom: 12px;
+}
+
+.location-map iframe{ 
+    width: 100%; /*The map stretches to fill the width of the map container*/
+    height: 450px; /*Fized height for the iframe*/
+}
+
+/* <------------- FOOTER -------------> */
+
+footer{ /*Sets the background color of the footer*/
+    background-color: #222;
+}
+
+.content-footer{
+    padding: 17px 0 8px 0; /*Padding inside the footer container, space between the text and the border*/
+}
+
+.content-footer p{ /*Style for p*/
+    color: #c78b07;
+    font-weight: 500;
+}
+
+.content-footer > p:nth-child(1){ 
+    margin-bottom: 18px; /*Adding space between the two p*/
+}
+
+
+@media screen and (min-width: 760px) {
+    .wrapper-general{
+      max-width: 1200px;
+      margin: auto;
+    }
+  }  
