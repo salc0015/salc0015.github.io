@@ -548,7 +548,61 @@ footer{ /*Sets the background color of the footer*/
     
      /* <------------- TEAM -------------> */
 
+    .wrapper-team{
+        display: grid;
+        grid-template-columns: 1fr 1fr; /*Divides grid into 2 columns, both columns equally wide*/
+        grid-template-rows: auto auto auto; /*Define 3 rows in the grid, height determined by the content*/
+        grid-template-areas: 
+        "t1 t1"
+        "t2 t2"
+        "t3 t3";
+    }
 
+    .wrapper-team h2{
+        grid-area: t1; /*Position the h2 heading in the grid area named t1. First row, 2 columns*/
+    }
+
+    .wrapper-team-john{
+        grid-area: t2; /*Position the wrapper team john in the grid area named t2. Second row, 2 columns*/
+    }
+
+    .wrapper-team-bob{
+        grid-area: t3; /*Position the wrapper team bob in the grid area named t3. Thir row, 2 columns*/
+    }
+
+    .wrapper-team-john{
+        display: grid;
+        grid-template-columns: 1fr 1fr; /*Divides the container into 2 columns of equal width*/
+        grid-template-rows: auto; /*Sets rows to automatically adjust to the content's height*/
+        grid-template-areas: /*Defines the template areas,m area t1 and t2*/
+        "t1 t2";
+        margin: 0; /*Removes default margin*/
+    }
+
+    .team-image-john{
+        grid-area: t1; /*Image of John in the first grid area (first column)*/
+    }
+
+    .team-content-john{
+        grid-area: t2; /*Content about John in second grid area (second column)*/
+    }
+
+    .wrapper-team-bob{
+        display: grid;
+        grid-template-columns: 1fr 1fr; /*Divides the container into 2 columns of equal width*/
+        grid-template-rows: auto; /*Sets rows to automatically adjust to the content's height*/
+        grid-template-areas: /*Defines template areas, area t1 and t2*/
+        "t1 t2";
+        margin: 0; /*Removes default margin*/
+    }
+
+    .team-content-bob{
+        grid-area: t1; /*Content about Bob is second grid area (second column)*/
+    }
+
+    .team-image-bob{
+        grid-area: t2; /*Image of Bob in the first grid area (first column*/
+    }
 
     /* 
 
