@@ -18,8 +18,6 @@ body{
 /* Maximum width for .wrapper-general class elements. Never exceed 100% of the parent element's width */
 .wrapper-general{
     width: 100%;
-    /* max-width: 1200px;
-    margin: 0 auto; */
 }
 
 .bleed-wrapper-menu{
@@ -104,7 +102,6 @@ body{
     justify-content: center;*/
     background-color: rgba(0, 0, 0, 0.6); /*Represents a semi-transparent black color, with 60% opacity*/
     color: white; 
-    /* padding: 15px; */
 }
 
 .wrapper-welcome-content h1{
@@ -453,12 +450,6 @@ footer{ /*Sets the background color of the footer*/
     .wrapper-logo img{
         margin-top: 0; /*Removes top margin*/
     }
-
-    /* .nav-menu{
-        flex-grow: 1;
-        display: flex;
-        justify-content: center;
-    } */
 
     .menu-list{
         display: flex; /*Flexible box layout, list items horizontal*/
